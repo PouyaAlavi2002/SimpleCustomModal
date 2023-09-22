@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Modal</title>
+    <link rel="stylesheet" href="css/output.css">
+</head>
+
+<body class="bg-white w-full">
+    <h1 class="capitalize text-6xl text-black font-arial flex flex-wrap justify-center mt-6">Click to See the Customized Modal
+    </h1>
+    <div class="flex justify-center bg-white mt-24 mx-auto border w-[800px] flex-wrap p-9 absolute left-[23%] top-[-90%]" id="myPrompt">
+        <div class="rounded-full border-2 border-red-700 text-black cursor-pointer flex flex-wrap justify-end text-3xl mx-[1000px] text-right w-[80%] items-center translate-x-[300px] p-2 transition duration-500 hover:text-white  hover:bg-red-700 hover:rotate-[270deg]" onclick="closePopUp()">X</div>
+        <h2 class="flex flex-wrap text-[40px] font-arial justify-center items-center mt-4">Wow !! A Modal</h2>
+        <p class=" flex flex-wrap justify-center items-end mt-4">Many people are getting problem in using bootstrap modal, so here I'm with custom modal which you can use
+            anywhere.
+        </p>
+        <div class="mt-11 cursor-pointer uppercase flex border border-red-700 justify-center items-center p-2 w-[30%] rounded-[10px] transition duration-500 hover:bg-red-700 hover:text-white" onclick="closePopUp()">close</div>
+    </div>
+    <div class="flex justify-center items-center cursor-pointer w-[24%] rounded-[8px] border-2 border-green-700 transition duration-500 hover:bg-green-700 hover:text-white h-[80px] mt-[200px] container text-3xl uppercase font-arial " onclick="popUp()">
+        open modal
+    </div>
+</body>
+<script src="js/master.js"></script>
+
+</html>
